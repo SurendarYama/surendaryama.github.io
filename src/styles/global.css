@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: sure-italic;
-  src: url(/fonts/OperatorMonoLig-MediumItalic.otf) format("opentype");
+  src: url(../fonts/OperatorMonoLig-MediumItalic.otf) format("opentype");
 }
 @font-face {
   font-family: sure;
-  src: url(/fonts/OperatorMonoLig-Medium.otf) format("opentype");
+  src: url(../fonts/OperatorMonoLig-Medium.otf) format("opentype");
 }
 
 :root {
