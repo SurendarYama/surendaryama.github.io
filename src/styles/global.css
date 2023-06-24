@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: sure-italic;
+  src: url(/fonts/OperatorMonoLig-MediumItalic.otf) format("opentype");
+}
+@font-face {
+  font-family: sure;
+  src: url(/fonts/OperatorMonoLig-Medium.otf) format("opentype");
+}
+
+:root {
+  --base01: #121212;
+  --base02: #ffffff;
+  --base03: #3defe9;
+  --base04: #ff3e00;
+  --base05: #f35676;
+  --base06: #d83bd2;
+  --base07: #63c760;
+  --base08: #fecc1b;
+  --base09: #59a8ff;
+}
+body {
+  background-color: var(--base01);
+}
+
+.sure {
+  font-family: "sure";
+  color: var(--base02);
+}
+
+.sure-i {
+  font-family: "sure-italic";
+  color: var(--base02);
+}
+
+.js {
+  color: var(--base03);
+}
+
+.svelte {
+  color: var(--base04);
+}
+
+.bg-custom {
+  background-color: var(--base05);
+}
+
+.bg-custom-inner {
+  background-color: var(--base01);
+}
+.font-sure-italic {
+  font-family: "sure-italic";
+}
+
+.text-base05 {
+  color: var(--base05);
+}
+
+.text-base06 {
+  color: var(--base06);
+}
+
+.text-base07 {
+  color: var(--base07);
+}
+
+.text-base08 {
+  color: var(--base08);
+}
+
+.text-base09 {
+  color: var(--base09);
+}
