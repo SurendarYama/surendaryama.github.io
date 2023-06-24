@@ -1,6 +1,8 @@
-import { defineConfig } from 'astro/config'
-export default defineConfig({
-  site: 'https://superzero17.github.io',
-  base: '/my-astro-website',
+// Full Astro Configuration API Documentation:
+// https://docs.astro.build/reference/configuration-reference
+
+// @ts-check
+export default /** @type {import('astro').AstroUserConfig} */ ({
+  // Comment out "renderers: []" to enable Astro's default component support.
   renderers: ["@astrojs/renderer-svelte"],
-})
+});
