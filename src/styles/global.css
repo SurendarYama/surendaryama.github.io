@@ -52,6 +52,7 @@ body {
   background-color: var(--base01);
 }
 .font-sure-italic {
+  @apply text-2xl;
   font-family: "sure-italic";
 }
 
