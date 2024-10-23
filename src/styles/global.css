@@ -26,16 +26,6 @@ body {
   background-color: var(--base01);
 }
 
-.sure {
-  font-family: "sure";
-  color: var(--base02);
-}
-
-.sure-i {
-  font-family: "sure-italic";
-  color: var(--base02);
-}
-
 .js {
   color: var(--base03);
 }
