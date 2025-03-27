@@ -1,8 +1,10 @@
 ---
-// @ts-ignore
-import Comma from "../components/comma.svelte";
+import {
+  Comma, SemiColon, OpenBracket, CloseBracket,
+  OpenFlowerBracket, CloseFlowerBracket, SingleQuote,
+  DoubleQuote, OpenParenthesis, CloseParenthesis
+} from "../components"
 ---
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -21,122 +23,36 @@ import Comma from "../components/comma.svelte";
     />
     <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
   </head>
-  <body class="font-sure-i">
-    <div class="w-screen h-screen overflow-x-hidden">
-      <div class="flex flex-col sm:flex-row p-0 sm:p-20 box-border">
-        <div class="flex flex-col text-2xl sm:text-8xl w-screen sm:w-1/2">
-          <span class="p-10 sm:p-0 text-[var(--base02)]">
-            I'm a fullstack <span class="js">javascript</span> developer. Who loves
-            <span class="svelte">front end development.</span>
-          </span>
-        </div>
-        <div class="bg-custom w-screen sm:w-1/2 h-auto rounded-xl p-4 sm:p-8">
-          <div
-            class="flex flex-col bg-custom-inner w-full h-full rounded-xl p-4 sm:p-8 space-y-4"
-          >
-            <div class="space-x-1">
-              <span class="text-base06">import</span>
-              <span class="text-base08">&lbrace;</span>
-              <span class="text-base05">Info</span>
-              <span class="text-base08">&rbrace;</span>
-              <span class="text-base06">form</span>
-              <span class="text-base07">"@contact/details";</span>
-            </div>
-            <div class="space-x-0 flex flex-col space-y-3">
-              <span class="text-base08"
-                >@Info(<span class="text-base06">&lbrace;</span></span
-              >
-              <span class="text-base08">
-                <span class="ml-5 text-base05"> name: </span>
-                <span class="text-base07"> "Surendar Yama", </span>
-              </span>
-              <span class="text-base08">
-                <span class="ml-5 text-base05"> about: </span>
-                <span class="text-base07">
-                  "fullstack javascript developer",
-                </span>
-              </span>
-              <span class="flex flex-col text-base08 space-y-3">
-                <span class="ml-5 text-base05">
-                  vscodeTheme: <span class="text-base08">
-                    <span class="text-base08">[</span>
-                    <a
-                      class="hover:text-blue-700"
-                      href="https://marketplace.visualstudio.com/items?itemName=SurendarYama.my-buddy"
-                      >"My Buddy"<Comma /></a
-                    >
-                    <a
-                      class="hover:text-blue-700"
-                      href="https://marketplace.visualstudio.com/items?itemName=surendar-kalyanam.surendar-yama"
-                      >"Surendar Yama"</a
-                    >
-                    <span class="text-base08">]<Comma /></span>
-                  </span>
-                </span>
-                <span class="ml-5 text-base05">
-                  vscodeThemeSettingsFile: <span
-                    class="text-base08 hover:text-blue-700"
-                  >
-                    <a
-                      href="https://github.com/SurendarYama/vscode-settings.json/blob/main/settings.json"
-                      >"Settings.json"<Comma /></a
-                    >
-                  </span>
-                </span>
-                <span class="ml-5 text-base05">
-                  youTube: <span class="text-base08 hover:text-blue-700">
-                    <a href="https://www.youtube.com/@surendaryama"
-                      >"Surendar Yama"<Comma /></a
-                    >
-                  </span>
-                </span>
-                <span class="text-base08">
-                  <span class="ml-5 text-base05"> github: </span>
-                  <span class="text-base08 hover:text-blue-700">
-                    <a href="https://github.com/SurendarYama"
-                      >"SurendarYama"<Comma /></a
-                    >
-                  </span>
-                </span>
-                <span class="text-base08">
-                  <span class="ml-5 text-base05"> vscodeProfile: </span>
-                  <span class="text-base08 hover:text-blue-700">
-                    <a
-                      href="https://marketplace.visualstudio.com/publishers/SurendarYama"
-                      >"SurendarYama"<span class="text-base07">,</span></a
-                    >
-                  </span>
-                </span>
-                <span class="text-base08">
-                  <span class="ml-5 text-base05"> email: </span>
-                  <span class="text-base07">
-                    "surendaryama@gmail.com"<Comma />
-                  </span>
-                </span>
-                <span class="text-base08">
-                  <span class="ml-5 text-base05"> phoneNumber: </span>
-                  <span class="text-base07">
-                    "+91 8825549745"<Comma />
-                  </span>
-                </span>
-              </span>
-
-              <span class="text-base08"
-                ><span class="text-base06">&rbrace;</span>)<span
-                  class="text-base07">;</span
-                ></span
-              >
-            </div>
-            <div class="space-x-1">
-              <span class="text-base06">export</span>
-              <span class="text-base06">class</span>
-              <span class="text-base07">AuthorInfo</span>
-              <span class="text-base08">&lbrace;</span>
-              <span class="text-base08">&rbrace;</span>
-            </div>
-          </div>
-        </div>
+  <body class="bg-black text-white font-monaspace-radon p-10 space-y-10">
+    <header class="flex flex-col space-y-3">
+      <h1 class="author-name-logo">Surendar Yama</h1>
+      <div class="flex items-end">
+        <p class="author-description">Shopify Themes, Apps and Headless Developer.</p>
       </div>
-    </div>
+    </header>
+    <!-- End of Header -->
+    <main class="flex flex-col space-y-2 border border-gray-200 p-10">
+        <section class="technologies">
+          <h2 class="text-center text-yellow-500 hover:underline">Technologies We Use <span class="text-red-500">❤</span></h2>
+          <div class="flex flex-wrap space-x-16 p-10">
+            <Comma/>
+            <SemiColon/>
+            <OpenBracket/>
+            <CloseBracket/>
+            <OpenFlowerBracket/>
+            <CloseFlowerBracket/>
+            <SingleQuote/>
+            <DoubleQuote/>
+            <OpenParenthesis/>
+            <CloseParenthesis/>
+          </div>
+        </section>
+        <!--End of Technologies-->
+    </main>
+    <!-- End of Main  -->
+    <footer>
+
+    </footer>
+    <!-- End of Footer -->
   </body>
 </html>

@@ -1,0 +1,1 @@
+<span class="text-purple-500">(</span>

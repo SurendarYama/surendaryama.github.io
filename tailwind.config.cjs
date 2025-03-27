@@ -5,8 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sure: ["sure"],
-      "sure-i": ["sure-italic"],
+      "monaspace-radon": ["Monaspace Argon"]
     },
   },
   // more options here
