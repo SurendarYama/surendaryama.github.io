@@ -4,12 +4,5 @@
 
 @font-face {
   font-family: "Monaspace Argon";
-  src: url(/fonts/MonaspaceRadon-Regular.otf) format("opentype");
-}
-
-.author-name-logo {
-  @apply text-2xl md:text-5xl text-purple-500;
-}
-.author-description{
-  @apply text-xs md:text-xl text-green-500;
+  src: url(../fonts/MonaspaceRadon-Regular.otf) format("opentype");
 }

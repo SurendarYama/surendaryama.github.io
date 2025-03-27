@@ -1,8 +1,9 @@
 ---
 import {
-  Comma, SemiColon, OpenBracket, CloseBracket,
-  OpenFlowerBracket, CloseFlowerBracket, SingleQuote,
-  DoubleQuote, OpenParenthesis, CloseParenthesis
+  SemiColon,
+  OpenFlowerBracket, CloseFlowerBracket,
+  DoubleQuote, OpenParenthesis, CloseParenthesis, Equal,
+  Colon, Line
 } from "../components"
 ---
 <html lang="en">
@@ -24,27 +25,72 @@ import {
     <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
   </head>
   <body class="bg-black text-white font-monaspace-radon p-10 space-y-10">
-    <header class="flex flex-col space-y-3">
-      <h1 class="author-name-logo">Surendar Yama</h1>
-      <div class="flex items-end">
-        <p class="author-description">Shopify Themes, Apps and Headless Developer.</p>
-      </div>
-    </header>
-    <!-- End of Header -->
-    <main class="flex flex-col space-y-2 border border-gray-200 p-10">
+    <main class="flex flex-col space-y-2 p-2 md:p-10">
         <section class="technologies">
-          <h2 class="text-center text-yellow-500 hover:underline">Technologies We Use <span class="text-red-500">❤</span></h2>
-          <div class="flex flex-wrap space-x-16 p-10">
-            <Comma/>
-            <SemiColon/>
-            <OpenBracket/>
-            <CloseBracket/>
-            <OpenFlowerBracket/>
-            <CloseFlowerBracket/>
-            <SingleQuote/>
-            <DoubleQuote/>
-            <OpenParenthesis/>
-            <CloseParenthesis/>
+          <h2 class="sm:text-center text-yellow-500 hover:underline">Author Info Config Object <span class="text-red-500">❤</span></h2>
+          <div class="flex flex-col p-10 space-y-4">
+            <div class="flex text-pink-500 space-x-4">
+                <span class="text-white">const</span>
+                <span>authorInfoConfig</span>
+                <Equal/>
+                <OpenFlowerBracket/>
+            </div>
+            <!-- End of line 1-->
+            <div class="flex space-x-6">
+                <Line propertyName="name" propertyValue="Surendar Yama" />
+            </div>
+            <!-- End of line 2 -->
+            <div class="flex space-x-6">
+                <Line propertyName="desscription" propertyValue="JavaScript Developer" />
+            </div>
+            <!-- End of line 3 -->
+            <div class="flex space-x-6">
+              <Line
+                  propertyName="youtube"
+                  propertyValue="https://www.youtube.com/@surendaryama"
+                  link={true}
+                  linkUrl="https://www.youtube.com/@surendaryama"
+              />
+            </div>
+            <!-- End of line 4 -->
+            <div class="flex space-x-6">
+              <Line
+                  propertyName="github"
+                  propertyValue="https://github.com/surendaryama"
+                  link={true}
+                  linkUrl="https://github.com/surendaryama"
+              />
+            </div>
+            <!-- End of line 5 -->
+            <div class="flex space-x-6">
+              <Line
+                  propertyName="email"
+                  propertyValue="surendaryama@gmail.com"
+              />
+            </div>
+            <!-- End of line 6 -->
+            <div class="flex space-x-6">
+              <Line
+                  propertyName="phoneNumber"
+                  propertyValue="+91 8825549745"
+              />
+            </div>
+            <!-- End of line 7 -->
+            <div class="flex">
+              <CloseFlowerBracket/>
+              <SemiColon/>
+            </div>
+            <!-- End of line 8 -->
+            <div class="flex">
+              <span class="flex mt-4">
+                console.<span class="text-violet-500">log</span>
+                <OpenParenthesis/>
+                <span class="text-pink-500">authorInfoConfig</span>
+                <CloseParenthesis/>
+                <SemiColon/>
+              </span>
+            </div>
+            <!-- End of line 9 -->
           </div>
         </section>
         <!--End of Technologies-->

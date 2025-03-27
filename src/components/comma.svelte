@@ -1,1 +1,1 @@
-<span class="text-purple-500">,</span>
+<span class="text-orange-500">,</span>
