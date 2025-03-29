@@ -12,3 +12,4 @@ export { default as CloseParenthesis } from "./close-parenthesis.svelte";
 export { default as Equal } from "./equal.svelte";
 export { default as Colon } from "./colon.svelte";
 export { default as Line } from "./line.svelte"
+export { default as Lines } from "./lines.svelte"

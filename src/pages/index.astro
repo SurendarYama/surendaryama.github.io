@@ -2,7 +2,7 @@
 import {
   SemiColon,
   OpenFlowerBracket, CloseFlowerBracket,
-  OpenParenthesis, CloseParenthesis, Equal, Line
+  OpenParenthesis, CloseParenthesis, Equal, Lines
 } from "../components"
 ---
 <html lang="en">
@@ -35,45 +35,7 @@ import {
                 <OpenFlowerBracket/>
             </div>
             <!-- End of line 1-->
-            <div class="flex space-x-6">
-                <Line propertyName="name" propertyValue="Surendar Yama" />
-            </div>
-            <!-- End of line 2 -->
-            <div class="flex space-x-6">
-                <Line propertyName="description" propertyValue="JavaScript Developer" />
-            </div>
-            <!-- End of line 3 -->
-            <div class="flex space-x-6">
-              <Line
-                  propertyName="youtube"
-                  propertyValue="https://www.youtube.com/@surendaryama"
-                  link={true}
-                  linkUrl="https://www.youtube.com/@surendaryama"
-              />
-            </div>
-            <!-- End of line 4 -->
-            <div class="flex space-x-6">
-              <Line
-                  propertyName="github"
-                  propertyValue="https://github.com/surendaryama"
-                  link={true}
-                  linkUrl="https://github.com/surendaryama"
-              />
-            </div>
-            <!-- End of line 5 -->
-            <div class="flex space-x-6">
-              <Line
-                  propertyName="email"
-                  propertyValue="surendaryama@gmail.com"
-              />
-            </div>
-            <!-- End of line 6 -->
-            <div class="flex space-x-6">
-              <Line
-                  propertyName="phoneNumber"
-                  propertyValue="+91 8825549745"
-              />
-            </div>
+            <Lines/>
             <!-- End of line 7 -->
             <div class="flex">
               <CloseFlowerBracket/>
