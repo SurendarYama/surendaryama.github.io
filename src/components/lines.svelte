@@ -32,15 +32,13 @@
     ];
 </script>
 
-<template>
-    {#each authorInfoConfig as config}
-        <div class="flex space-x-6">
-            <Line
-                    propertyName={config.propertyName}
-                    propertyValue={config.propertyValue}
-                    link={config.link}
-                    linkUrl={config.linkUrl}
-            />
-        </div>
-    {/each}
-</template>
+{#each authorInfoConfig as config}
+    <div class="flex space-x-6">
+        <Line
+                propertyName={config.propertyName}
+                propertyValue={config.propertyValue}
+                link={config.link}
+                linkUrl={config.linkUrl}
+        />
+    </div>
+{/each}
