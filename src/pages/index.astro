@@ -1,31 +1,7 @@
 ---
-import {
-  AuthorSection
-} from "../components/author"
-
-import "../styles/global.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import { AuthorSection } from "../components/author";
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Surendar Yama personal website" />
-    <title>Surendar Yama Website | Landing Page</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="https://surendaryama.github.io/favicon.svg"
-    />
-    <link
-      rel="alternate icon"
-      type="image/x-icon"
-      href="https://surendaryama.github.io/favicon.ico"
-    />
-  </head>
-  <body class="bg-black text-white font-monaspace-radon p-10 space-y-10">
-    <main class="flex flex-col space-y-2 p-2 md:p-10">
-      <AuthorSection />
-    </main>
-    <!-- End of Main  -->
-  </body>
-</html>
+<MainLayout title="Surendar Yama | Author Info Page">
+  <AuthorSection />
+</MainLayout>
