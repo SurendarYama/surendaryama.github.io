@@ -1,5 +1,5 @@
 <script>
-    import { Colon, Comma, DoubleQuote } from "./"
+    import { Colon, Comma, DoubleQuote } from "./index"
     export let propertyName = "propertyName";
     export let propertyValue = "propertyValue";
     export let link = false;
