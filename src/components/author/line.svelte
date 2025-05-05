@@ -1,9 +1,6 @@
 <script>
-    import { Colon, Comma, DoubleQuote } from "./index"
-    export let propertyName = "propertyName";
-    export let propertyValue = "propertyValue";
-    export let link = false;
-    export let linkUrl = "#";
+    import { Colon, Comma, DoubleQuote } from "./index";
+    let { propertyName, propertyValue, link, linkUrl } = $props();
 </script>
 
 <div class="flex ml-6 space-x-2">
