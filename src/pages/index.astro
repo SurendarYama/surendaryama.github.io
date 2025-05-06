@@ -3,5 +3,23 @@ import MainLayout from "../layouts/MainLayout.astro";
 import { AuthorSection } from "../components/author";
 ---
 <MainLayout title="Surendar Yama | Author Info Page">
+  <p class="loading flex items-center justify-center mt-[40vh]">
+        <span class="animate-pulse">
+          Loading...
+        </span>
+  </p>
   <AuthorSection />
 </MainLayout>
+
+<script>
+  const mainAuthorSection = document.querySelector('.author-info');
+  const loading = document.querySelector('.loading');
+  mainAuthorSection.classList.add("hidden");
+  document.fonts.ready.then(() => {
+    const setTimeoutId = setTimeout(() => {
+      loading.classList.add("hidden");
+      mainAuthorSection.classList.remove("hidden");
+      clearTimeout(setTimeoutId);
+    }, 2000);
+  });
+</script>
