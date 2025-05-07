@@ -1,5 +1,5 @@
 <script>
-    import { Colon, Comma, DoubleQuote } from "./index";
+    import { Colon, Comma, DoubleQuote } from "./";
     let { propertyName, propertyValue, link, linkUrl } = $props();
 </script>
 

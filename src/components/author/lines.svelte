@@ -1,5 +1,5 @@
 <script>
-    import { Line } from "./index";
+    import { Line } from "./";
     const authorInfoConfig = [
         {
             propertyName:"name",
