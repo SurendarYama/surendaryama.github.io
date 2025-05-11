@@ -12,12 +12,10 @@ import { AuthorSection } from "../components";
 </MainLayout>
 
 <script>
-  const mainAuthorSection = document.querySelector('.author-info');
-  const loading = document.querySelector('.loading');
   document.fonts.ready.then(() => {
     const setTimeoutId = setTimeout(() => {
-      loading.classList.add("hidden");
-      mainAuthorSection.classList.remove("hidden");
+      document.querySelector('.loading').classList.add("hidden");
+      document.querySelector('.author-info').classList.remove("hidden");
       clearTimeout(setTimeoutId);
     }, 2000);
   });
