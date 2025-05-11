@@ -14,7 +14,6 @@ import { AuthorSection } from "../components";
 <script>
   const mainAuthorSection = document.querySelector('.author-info');
   const loading = document.querySelector('.loading');
-  mainAuthorSection.classList.add("hidden");
   document.fonts.ready.then(() => {
     const setTimeoutId = setTimeout(() => {
       loading.classList.add("hidden");
