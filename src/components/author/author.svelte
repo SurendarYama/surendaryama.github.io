@@ -5,7 +5,6 @@
         OpenParenthesis, CloseParenthesis, Equal, Lines,
         FullStop,
     } from "./";
-    import { WebStorm } from "../";
 </script>
 
 <section class="author-info">
@@ -35,9 +34,6 @@
               </span>
         </div>
         <!-- End of line 9 -->
-    </div>
-    <div >
-        <a class="flex items-center justify-center hover:text-fuchsia-400 hover:underline space-x-4" href="https://www.jetbrains.com/webstorm/"><span>Thanks to</span> <WebStorm /></a>
     </div>
 </section>
 <!--End of Author Info  -->

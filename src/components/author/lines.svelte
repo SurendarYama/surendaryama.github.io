@@ -22,6 +22,18 @@
             linkUrl:"https://github.com/surendaryama"
         },
         {
+            propertyName:"facebook",
+            propertyValue: "https://facebook.com/surendaryama17",
+            link:true,
+            linkUrl:"https://facebook.com/surendaryama17"
+        },
+        {
+            propertyName:"instagram",
+            propertyValue: "https://www.instagram.com/surendaryama",
+            link:true,
+            linkUrl:"https://www.instagram.com/surendaryama"
+        },
+        {
             propertyName:"email",
             propertyValue: "surendaryama@gmail.com"
         },
