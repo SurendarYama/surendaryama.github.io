@@ -22,6 +22,12 @@
             linkUrl:"https://github.com/surendaryama"
         },
         {
+            propertyName:"x",
+            propertyValue: "https://x.com/surendaryama",
+            link:true,
+            linkUrl:"https://x.com/surendaryama"
+        },
+        {
             propertyName:"facebook",
             propertyValue: "https://facebook.com/surendaryama17",
             link:true,
