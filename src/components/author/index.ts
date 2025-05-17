@@ -1,4 +1,3 @@
-// @ts-nocheck
 export { default as Comma } from "./comma.svelte";
 export { default as SemiColon } from "./semicolon.svelte";
 export { default as OpenBracket } from "./open-bracket.svelte";
