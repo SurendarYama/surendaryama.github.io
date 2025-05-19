@@ -1,6 +1,12 @@
-<script>
+<script lang="ts">
+    type AuthorInfoConfig = {
+        propertyName: string;
+        propertyValue: string;
+        link?: boolean;
+        linkUrl?: string;
+    };
     import { Line } from "./";
-    const authorInfoConfig = [
+    const authorInfoConfig: AuthorInfoConfig[] = [
         {
             propertyName:"name",
             propertyValue: "Surendar Yama"
@@ -20,6 +26,12 @@
             propertyValue: "https://github.com/surendaryama",
             link:true,
             linkUrl:"https://github.com/surendaryama"
+        },
+        {
+            propertyName:"whatsapp",
+            propertyValue: "https://whatsapp.com/channel/0029Vb66pouJuyA68kyivQ0F",
+            link:true,
+            linkUrl:"https://whatsapp.com/channel/0029Vb66pouJuyA68kyivQ0F"
         },
         {
             propertyName:"x",
