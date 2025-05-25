@@ -41,9 +41,9 @@
         },
         {
             propertyName:"facebook",
-            propertyValue: "https://facebook.com/surendaryama17",
+            propertyValue: "https://facebook.com/surendaryama1",
             link:true,
-            linkUrl:"https://facebook.com/surendaryama17"
+            linkUrl:"https://facebook.com/surendaryama1"
         },
         {
             propertyName:"instagram",
@@ -65,10 +65,10 @@
 {#each authorInfoConfig as config}
     <div class="flex space-x-6">
         <Line
-                propertyName={config.propertyName}
-                propertyValue={config.propertyValue}
-                link={config.link}
-                linkUrl={config.linkUrl}
+            propertyName={config.propertyName}
+            propertyValue={config.propertyValue}
+            link={config.link ?? false}
+            linkUrl={config.linkUrl}
         />
     </div>
 {/each}
