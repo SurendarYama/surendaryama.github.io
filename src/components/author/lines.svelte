@@ -1,5 +1,5 @@
-<script lang="ts">
-    type AuthorInfoConfig = {
+<script context="module" lang="ts">
+    export type AuthorInfoConfig = {
         propertyName: string;
         propertyValue: string;
         link?: boolean;
@@ -65,10 +65,7 @@
 {#each authorInfoConfig as config}
     <div class="flex space-x-6">
         <Line
-            propertyName={config.propertyName}
-            propertyValue={config.propertyValue}
-            link={config.link ?? false}
-            linkUrl={config.linkUrl}
+            {...config}
         />
     </div>
 {/each}

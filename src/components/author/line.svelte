@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
     import { Colon, Comma, DoubleQuote } from "./";
-    let { propertyName, propertyValue, link, linkUrl } = $props();
+    import type { AuthorInfoConfig } from "./lines.svelte";
+    let { propertyName, propertyValue, link, linkUrl } : AuthorInfoConfig = $props();
 </script>
 
 <div class="flex ml-6 space-x-2">
