@@ -59,8 +59,6 @@
 
 {#each authorInfoConfig as config}
     <div class="flex space-x-6">
-        <Line
-            {...config}
-        />
+        <Line {...config} />
     </div>
 {/each}
