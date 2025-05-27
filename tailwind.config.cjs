@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      "monaspace-radon": ["Monaspace Argon"]
+      "monaspace-radon": ["Monaspace Radon"],
     },
   },
   // more options here

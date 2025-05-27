@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Monaspace Argon";
+  font-family: "Monaspace Radon";
   src: url(/fonts/MonaspaceRadon-Regular.otf) format("opentype");
 }
