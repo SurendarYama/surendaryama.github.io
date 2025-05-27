@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Colon, Comma, DoubleQuote } from "./";
-    import type { AuthorInfoConfig } from "./lines.svelte";
+    import type { AuthorInfoConfig } from "../../__types";
     let { propertyName, propertyValue, link, linkUrl } : AuthorInfoConfig = $props();
 </script>
 

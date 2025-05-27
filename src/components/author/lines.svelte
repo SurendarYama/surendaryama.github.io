@@ -1,10 +1,5 @@
-<script context="module" lang="ts">
-    export type AuthorInfoConfig = {
-        propertyName: string;
-        propertyValue: string;
-        link?: boolean;
-        linkUrl?: string;
-    };
+<script lang="ts">
+    import type { AuthorInfoConfig } from "../../__types";
     import { Line } from "./";
     const authorInfoConfig: AuthorInfoConfig[] = [
         {
