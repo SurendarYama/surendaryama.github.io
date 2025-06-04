@@ -16,14 +16,11 @@
             <Equal/>
             <OpenFlowerBracket/>
         </div>
-        <!-- End of line 1-->
         <Lines/>
-        <!-- End of line 7 -->
         <div class="flex">
             <CloseFlowerBracket/>
             <SemiColon/>
         </div>
-        <!-- End of line 8 -->
         <div class="flex">
               <span class="flex mt-4">
                 console<FullStop/><span class="text-violet-500">log</span>
@@ -33,7 +30,5 @@
                 <SemiColon/>
               </span>
         </div>
-        <!-- End of line 9 -->
     </div>
 </section>
-<!--End of Author Info  -->
