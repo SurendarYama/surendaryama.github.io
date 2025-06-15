@@ -1,14 +1,14 @@
 <script lang="ts">
     import type { AuthorInfoConfig } from "../../__types";
     import { Line } from "./";
-    const authorInfoConfig: AuthorInfoConfig[] = [
+    const authorInfoConfig: AuthorInfoConfig[] = $state([
         {
             propertyName:"name",
             propertyValue: "Surendar Yama"
         },
         {
-            propertyName:"description",
-            propertyValue: "JavaScript Developer"
+            propertyName:"role",
+            propertyValue: "JavaScript Fullstack Developer"
         },
         {
             propertyName:"youtube",
@@ -54,7 +54,7 @@
             propertyName:"phoneNumber",
             propertyValue: "+91 8825549745"
         },
-    ];
+    ]);
 </script>
 
 {#each authorInfoConfig as config}
