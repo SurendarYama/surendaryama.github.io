@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type { AuthorInfoConfig } from "../../__types";
-    import { Line } from "./";
+    import type { AuthorInfoConfig } from "@/__types";
+    import { Line } from "@/components/author";
     const authorInfoConfig: AuthorInfoConfig[] = $state([
         {
             propertyName:"name",
