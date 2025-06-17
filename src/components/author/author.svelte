@@ -2,9 +2,10 @@
     import {
         SemiColon,
         OpenFlowerBracket, CloseFlowerBracket,
-        OpenParenthesis, CloseParenthesis, Equal, Lines,
+        OpenParenthesis, CloseParenthesis, Equal,
         FullStop,
-    } from "./";
+    } from "@/components/common";
+    import { Lines } from "@/components/author";
 </script>
 
 <section class="author-info hidden">

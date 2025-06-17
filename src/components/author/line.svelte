@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { Colon, Comma, DoubleQuote } from "./";
-    import type { AuthorInfoConfig } from "../../__types";
+    import { Colon, Comma, DoubleQuote } from "@/components/common";
+    import type { AuthorInfoConfig } from "@/__types";
     let { propertyName, propertyValue, link, linkUrl } : AuthorInfoConfig = $props();
 </script>
 
