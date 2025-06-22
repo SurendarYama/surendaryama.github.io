@@ -9,8 +9,7 @@
 </script>
 
 <section class="author-info hidden">
-    <h2 class="group/heading sm:text-center text-yellow-500 hover:underline ">Author Info Config Object <span class="text-red-500 group-hover/heading:text-pink-500">❤</span></h2>
-    <div class="flex flex-col p-10 space-y-4">
+    <div class="author-info-lines flex flex-col p-10 space-y-4">
         <div class="flex text-pink-500 space-x-4">
             <span class="text-white">const</span>
             <span>authorInfoConfig</span>

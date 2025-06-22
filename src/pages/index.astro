@@ -12,10 +12,21 @@ import { AuthorSection } from "@/components";
 </MainLayout>
 
 <script>
+  import { gsap } from "gsap";
+  import { SplitText } from "gsap/SplitText";
+
+  gsap.registerPlugin(SplitText);
   document.fonts.ready.then(() => {
     const setTimeoutId = setTimeout(() => {
       document.querySelector('.loading').classList.add("hidden");
       document.querySelector('.author-info').classList.remove("hidden");
+      let authorInfoLines = SplitText.create('.author-info-lines');
+      gsap.from(authorInfoLines.lines, {
+        duration:.5,
+        y:10, 
+        autoAlpha:0,
+        stagger:0.5
+      })
       clearTimeout(setTimeoutId);
     }, 2000);
   });
