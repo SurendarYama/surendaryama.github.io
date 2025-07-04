@@ -9,7 +9,7 @@
 </script>
 
 <section class="author-info hidden">
-    <div class="author-info-lines flex flex-col p-10 space-y-4">
+    <div class="flex flex-col p-10 space-y-4">
         <div class="flex text-pink-500 space-x-4">
             <span class="text-white">const</span>
             <span>authorInfoConfig</span>
